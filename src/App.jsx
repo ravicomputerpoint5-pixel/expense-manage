@@ -28,7 +28,7 @@ function App() {
       <h1 className="bg-primary-subtle p-3 shadow-sm mb-3">Expense Management</h1>
       <div className="container">
         <ExpenseForm onAddExpense={addExpense} />
-        <h2 className="my-3">Total Expense: {totalExpense}</h2>
+        <h2 className="my-3">Total Expense: ₹ {totalExpense.toLocaleString()}</h2>
         {expenses.length === 0 ? (
             <p className="text-center text-muted">No expenses added yet.</p>
           ) : (
